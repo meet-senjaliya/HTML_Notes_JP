@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /*1. Element*/
+        div{
+            color: brown;
+
+        }
+
+        /*2. Universal(*)*/
+        *{
+            color: blueviolet ;
+        }
+
+        /*3. ID */
+        #a{
+            color: green;       
+        }
+        div#a{
+            color: blue;
+        }
+        /*4. class */
+        .bgr{
+            background-color: red;
+            color: white;
+
+        }
+        .bgp{
+            background-color: pink;
+        }
+        h1.bgp{
+            background-color: yellow;
+        }
+
+        /* Combinators */
+        /*5. child p>c */
+        div>p{
+            color: magenta;
+            text-align: right;
+        }
+        /*6. descendant*/
+        div p{
+            color: orange;        
+            text-align: center;
+        }
+
+        /*7. Attribute selctors*/
+        [target]
+        {
+            font-size: 30px;
+            background-color: rgb(210, 122, 60);
+        }
+        a[target="_blank"]
+        {
+            font-size: 30px;
+            background-color: pink;
+        }
+
+        /*8. Grouping */
+        p,div,article{
+            text-align: right;
+        }                                   
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="bgp">
+        Selectors
+    </h1>
+    
+    <div class="bgr" id="a">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo veniam adipisci quia? Quibusdam, ullam doloribus recusandae tempora velit veritatis porro!</div>
+    
+    <div class="bgr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo veniam adipisci quia? Quibusdam, ullam doloribus recusandae tempora velit veritatis porro!</div>
+    
+    <div class="bgr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo veniam adipisci quia? Quibusdam, ullam doloribus recusandae tempora velit veritatis porro!</div>
+    
+    <div class="bgp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo veniam adipisci quia? Quibusdam, ullam doloribus recusandae tempora velit veritatis porro!</div>
+
+    
+    <div class="bgp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo veniam adipisci quia? Quibusdam, ullam doloribus recusandae tempora velit veritatis porro!</div>
+
+    <p class="bgp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum qui quas dolorem voluptates eum voluptas, tenetur possimus, itaque atque odio iste ut nam! Minus aperiam quas officiis iste voluptatibus est!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sed ab, velit sequi praesentium dicta vero modi libero ratione rem officiis blanditiis molestias sunt mollitia atque deleniti, error eveniet nisi.</p>
+
+    <div>Demo div
+        <p>para1</p>
+        <article>demo art
+            <p>para 2</p>
+        </article>
+
+        <p>para 3</p>
+    </div>
+
+    <a href="f1.html">Link to file 1</a>
+    <a href="f1.html" target="_self">link to file 2</a>
+    <a href="f1.html" target="_blank">link tp file 3</a>
+</body>
+</html>

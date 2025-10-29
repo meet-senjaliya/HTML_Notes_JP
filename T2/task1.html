@@ -1,0 +1,134 @@
+<!--use apporite selector to design to given element 
+    1.in the nested list each child of ul must have color brown and size 20px.
+      any other sub-item has color orange and size 30px.
+
+    2.Given table of 4 rows & 3 colummnns even rows have bg color black , color: white and 
+      odd rows have bg color: lightgreen , color; green.
+
+      only shell no. 5 has bg yellow font-size: 50px 
+
+    3.Given a form use attribute selector so that each different input has different bg
+-->
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul li{
+            color: orange;
+            font-size: 30px;
+        }
+        ul>li{
+            color: brown;
+            font-size: 20px;
+        }
+        
+
+        .even{
+            background-color: black;
+            color: white;
+        }
+        .odd{
+            background-color: lightgreen;
+            color: green;
+        }
+        #cel5{
+            background-color: yellow;
+            font-size: 50px;
+        }
+
+        [type = "text"]{
+            background-color: blue;
+        }
+        [type="password"]{
+            background-color: aqua;
+        }
+        [type="email"]{
+            background-color: violet;
+        }
+        [type="submit"]{
+            background-color: red;
+        }
+        [type="button"]{
+            background-color: blanchedalmond;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Apples
+            <ol>
+                <li>Green
+                    <ol>
+                        <li type="a">High</li>
+                    </ol>
+                </li>
+                <li>Red</li>
+            </ol>
+
+        </li>
+        <li>pineapple</li>
+        <li>Dragon
+            <ol type="a">
+                <li >White</li>
+                <li>red</li>
+            </ol>
+        </li>
+    </ul>
+
+    <br><br><br>
+
+    <table border="2" rules="all" width="200" >
+        <tr align="center" class="odd">
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr align="center" class="even">
+            <td>d</td>
+            <td id="cel5">e</td>
+            <td>f</td>
+        </tr>
+        <tr align="center" class="odd">
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr align="center" class="even">
+            <td>j</td>
+            <td>k</td>
+            <td>l</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <form>
+        <fieldset>
+            <label>First Name: 
+                <input type="text">
+            </label>
+            <br><br>
+            <label>Password:
+                <input type="password">
+            </label>
+            <br><br>
+            <label>Email:
+                <input type="email">
+            </label>
+            <br><br>
+            <label>
+                <input type="submit">
+            </label>
+            <label ><input type="button" value="b1"></label>
+        </fieldset>
+    </form>
+
+</body>
+</html>
