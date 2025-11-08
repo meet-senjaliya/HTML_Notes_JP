@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid green;
+            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+            
+        }
+        #p1{
+            position: static;
+            left: 500px
+        }
+        #p2{
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+        #p3{
+            /*wrt to nearest positioned parent else with respect to broweser*/
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+        #c4{
+            border: 2px solid red;
+            height: 80px;
+            width: 80px;
+            background-color:aquamarine;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+        #p4{
+            position: relative;
+        }
+        #p5{
+            position: fixed;
+            top: 50px;
+            left: 100px;
+        }
+        #p6{
+            border: 2px solid blue;
+            height: 300px;
+            width: 400px;
+            overflow: auto;
+        }
+        #c6{
+            border:  2px solid gold;
+            background-color: black;
+            color: white;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+        }
+
+    </style> 
+</head>
+<body>
+    <div class="box" id="p1">hello-1</div>
+    <div class="box" id="p2">hello-2</div>
+    <div class="box" id="p3">hello-3</div>
+    <div class="box" id="p4">hello-4
+        <div id="c4">C4</div>
+    </div>
+    <div class="box" id="p5">hello-5</div>
+    <div id="p6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam doloremque ipsum amet ab, neque commodi nihil quam provident, eius repellat fugiat sunt voluptatem voluptas eos enim et deserunt quae rem facilis ipsam. Explicabo obcaecati repellendus cum dignissimos vel cupiditate nemo, velit dolorum sequi, quibusdam eligendi voluptatibus amet reprehenderit iure minus quos delectus minima! Qui exercitationem quidem ea quam, ducimus ad debitis magnam expedita! Impedit nam quos voluptas atque? Aspernatur aperiam, nesciunt rerum commodi obcaecati ipsam nemo. Ipsa culpa odit modi eius nemo voluptatum ipsum quas. Dolore quasi beatae nesciunt tenetur voluptates eos possimus tempora architecto, doloribus quo? Rerum sequi dignissimos fugit quae id sed aut. Consequuntur natus alias labore corporis veniam numquam, itaque perferendis consectetur, voluptatem tempore dolor similique quidem architecto ducimus! Molestiae vero minus harum deleniti, est illum fuga soluta non nostrum dolore veritatis quos ratione voluptate dignissimos consectetur corrupti quam aliquam! Officiis nesciunt obcaecati impedit dolores ipsa provident. Modi alias sed quam voluptatum quasi dolorem, ex harum perspiciatis non velit facilis, dignissimos ut impedit mollitia vitae tempora animi eius accusamus sit porro aspernatur expedita nostrum! Vitae praesentium fugit accusamus odit. Amet nam, iste magnam delectus aperiam tempore officiis! Ut odit veniam blanditiis assumenda? Aut est possimus pariatur obcaecati odio totam nostrum, minima quasi vel deserunt iusto sapiente odit, magnam accusantium nisi cum! Quibusdam illum debitis ea fugiat eius facilis qui repudiandae non libero aspernatur asperiores dolores in, ipsam numquam eum incidunt tenetur. Adipisci voluptas enim dolorum vero sequi voluptate deserunt quas, blanditiis rerum ipsum atque a iste ipsa veniam ratione nisi delectus, voluptatum eos aut non unde fuga et. Ab, eveniet sequi mollitia doloremque provident incidunt voluptatem optio recusandae assumenda debitis ex officia omnis, aliquid minus aliquam itaque nam suscipit maiores. Quibusdam cumque, accusamus excepturi facilis, ex eum ducimus quia modi dolore sequi ea aliquid expedita velit repellat.
+        <div id="c6">I will stick</div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quas illum eius at sapiente, minima quasi molestiae neque debitis magni molestias numquam ipsam corrupti, aliquam iste amet harum eum blanditiis, quis dolor nam. Ut distinctio voluptate aspernatur a sapiente. Veniam consequuntur id sunt in dicta illum provident neque voluptas aut maxime, deleniti, fuga cupiditate quasi dignissimos accusamus sequi laudantium recusandae ad perspiciatis natus aliquid repellat nesciunt repellendus. Vel officiis qui, provident sequi obcaecati similique eligendi quidem atque fuga quo minima, doloribus dicta totam, aperiam mollitia quaerat culpa quis beatae. Enim quas vel necessitatibus ipsa dolor ex expedita ipsam temporibus, veniam distinctio iste doloremque fuga nulla adipisci cumque neque tenetur vero eum perferendis accusamus natus, consequuntur in. Voluptatum eveniet consequuntur, sit est eligendi ab, sapiente mollitia itaque accusantium in perferendis expedita voluptas delectus repellat odit et nulla laudantium amet dignissimos explicabo. Nam ad reprehenderit incidunt quisquam enim laudantium quidem harum sequi ipsa. Ex quaerat, fugiat, vitae voluptatibus neque nesciunt in culpa error facilis eaque harum illo veniam aperiam magni minima eveniet sed a vel quibusdam minus ut aspernatur. Nostrum explicabo velit, quidem dolores eius placeat iste deserunt quibusdam veritatis sit est, corrupti iusto praesentium aliquam nihil, totam cum consectetur repellendus laboriosam? Iste enim ratione at quod, maiores dolorum quasi consequatur deleniti quisquam rerum dignissimos est esse minus libero molestiae quia labore laudantium possimus magni mollitia quidem consequuntur sequi doloribus culpa! Laboriosam ipsa inventore autem nostrum natus temporibus placeat, at quae aliquam totam ex quidem, consequatur iusto repudiandae nesciunt culpa? Nostrum perferendis unde harum officia quos, nulla architecto! Cum cumque quidem laborum ipsum quas vel provident nulla ipsa voluptatibus quae odit, distinctio maiores, enim sapiente nam earum, quisquam dolore! Corrupti aut impedit eum illum, possimus quis rerum mollitia tempora inventore ex ullam expedita minima deleniti dolores, debitis autem omnis quas repellendus earum.
+    </div>
+</body>
+</html>
