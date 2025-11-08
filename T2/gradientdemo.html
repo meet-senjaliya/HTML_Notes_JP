@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gc{
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 20px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+        #g1{
+            background-image: linear-gradient(violet,indigo,blue,green,yellow,orange,red);
+            
+        }
+        #g2{
+            /*background-image: linear-gradient(to right,pink,magenta);*/
+            background-image: linear-gradient(to top right ,yellow,magenta);
+        }
+        #g3{
+            /*background-image: linear-gradient(yellow,magenta 10%);*/
+            background-image: linear-gradient(yellow 10%,orange 30%,aqua 50%,navy 70%);
+        }
+        #g4{
+            background-image: radial-gradient(yellow,orange,red);
+            width: 400px;
+        }
+        
+        #g5{
+            background-image: radial-gradient(circle,yellow,orange,red);
+            width: 400px;
+        }
+        #g6{
+            background-image: radial-gradient(circle,yellow,green 20%,blue);
+            width: 400px;
+        }
+        #g7{
+            background-image: conic-gradient(blue,olive,purple,blue);
+        }
+        
+        #g8{
+            background-image: conic-gradient(from 45deg,blue,green,yellow,blue);
+        }
+        #g9{
+            border-radius: 50%;
+            background-image: conic-gradient(pink 0deg,pink 45deg,purple 45deg,
+            purple 90deg,aqua 90deg,aqua 135deg,navy 135deg,navy 180deg,olive 180deg,
+            olive 225deg,peachpuff 225deg,peachpuff 270deg,darkgreen 270deg,darkgreen 315deg, lime 315deg,lime 360deg) ;
+            transition: all 3s;
+        }
+        #g1:hover{
+             
+            transform: translate(1000px,1000px);
+            scale: -1;
+            transition: 02s;
+        }
+        #g2:hover{
+             transform: translate(1000px,1000px);
+            transform:scale(2,4);
+        }
+        #g5:hover{
+            transform: skew(45deg,45deg);
+        }
+        #g9:hover{
+            
+            transform: rotateX(180deg);
+            transform: rotateY(180deg);
+            transform: rotateZ(360deg);
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="gc">
+        <div id="g1" class="box"></div>
+        <div id="g2" class="box"></div>
+        <div id="g3" class="box"></div>
+        <div id="g4" class="box"></div>
+        <div id="g5" class="box"></div>
+        <div id="g6" class="box"></div>
+        <div id="g7" class="box"></div>
+        <div id="g8" class="box"></div>
+        <div id="g9" class="box"></div>
+    </div>
+</body>
+</html>
