@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <div class="container mt-3">
+    <div class="alert alert-warning alert-dismissible">
+      Black Friday sale is live!
+      <a href="#" class="alert-link text-decoration-none">Here</a>
+      <button class="btn-close" data-bs-dismiss="alert">
+      </button>
+    </div>
+  </div>
+
+  <!--bs buttons-->
+  <div class="container mt-3">
+    <button class="btn btn-primary">click me</button>
+    <a href="#" class="btn btn-success">click me</a>
+    <input type="button" class="btn btn-danger" value="click Me">
+  </div>
+
+  <div class="container mt-3">
+    <button class="btn btn-outline-primary">click me</button>
+    <a href="#" class="btn btn-sm btn-outline-success disabled">click me</a>
+    <input type="button" class="btn btn-lg btn-outline-danger" value="click Me">
+  </div>
+
+  <div class="container mt-3 text-center">
+    <button class="btn btn-secondary w-100">click me</button>
+  </div>
+
+  <!--bs dropdown-->
+  <div class="container mt-3">
+    <div class="dropdown">
+      <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Syllabus</button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-header">
+          sem-3
+        </li>
+        <li>
+          <a href="#" class="dropdown-item ">FSD-1</a>
+        </li>
+        <li>
+          <a href="#" class="dropdown-item ">FCSP-1</a>
+        </li>
+        <li class="dropdown-divider">
+          <a href="#" class="dropdown-item">DE</a>
+        </li>
+        <li>
+          <a href="#" class="dropdown-item">PS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- bscollapse-->
+  <br>
+  <div class="container mt-3">
+    <button class="btn w-100 bg-warning" data-bs-toggle="collapse" data-bs-target="#s">View Details</button>
+
+    <div class="collapse fade card card-body mt-3 " id="s">
+      <h1 class="text-center">Thesis</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium maiores aspernatur ratione, tempore
+        officiis, impedit incidunt ex ipsa cum voluptate aut deserunt corrupti nam eaque ipsam accusamus. Saepe
+        laudantium necessitatibus dolores.
+      </p>
+    </div>
+  </div>
+
+  <!--.accoridon-->
+
+  <div class="containr mt-3">
+    <div class="accordion" id="acc">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#n1">
+            <i class="bi bi-newspaper"></i>News Headline1</button>
+        </h2>
+
+        <div class="accordion-collapse collapse" data-bs-parent="#acc" id="n1">
+          <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quidem
+            perspiciatis quia aspernatur nostrum natus voluptatem? Earum, numquam ipsum! Porro accusantium aut, sint
+            minima sed aliquam! Beatae inventore perferendis eaque voluptatem velit, voluptas, aspernatur suscipit
+            aliquid eligendi illo tempora nesciunt dicta veritatis mollitia omnis accusantium, itaque at dolorum!
+            Nesciunt nostrum adipisci pariatur, cumque aliquam saepe nobis! Vero architecto nemo laboriosam itaque
+            tempore ut consequuntur! Mollitia aliquam praesentium porro repellat eos dolorem ad quod sit neque dolor.
+            Dolorem quasi blanditiis id quisquam ea omnis ad nemo obcaecati, tenetur neque possimus eos, modi nostrum
+            suscipit veritatis ratione molestias architecto repellendus doloremque exercitationem, rerum laudantium?
+            Laboriosam ipsa incidunt quidem fugit? Autem similique ipsa consequuntur, quas minima, expedita voluptatibus
+            dignissimos ad laboriosam, animi culpa nostrum quam pariatur commodi qui architecto. Provident laboriosam
+            earum, ipsam temporibus exercitationem sequi. Laboriosam aperiam facere, libero eligendi laudantium ipsa
+            placeat eveniet cumque dolorum minus minima enim unde quae eum. In culpa delectus, repudiandae sed harum
+            odit nobis laborum illo ea ad. Numquam aliquam aspernatur libero assumenda odio voluptates! Modi voluptas
+            minima excepturi est quod eius beatae assumenda consectetur praesentium obcaecati rem eligendi vel id porro
+            dolorum enim, dolor dignissimos. Quia, eum. Amet quae culpa fugiat eveniet eos quo velit.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#n2">News Headline1</button>
+        </h2>
+
+        <div class="accordion-collapse collapse" data-bs-parent="#acc" id="n2">
+          <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quidem
+            perspiciatis quia aspernatur nostrum natus voluptatem? Earum, numquam ipsum! Porro accusantium aut, sint
+            minima sed aliquam! Beatae inventore perferendis eaque voluptatem velit, voluptas, aspernatur suscipit
+            aliquid eligendi illo tempora nesciunt dicta veritatis mollitia omnis accusantium, itaque at dolorum!
+            Nesciunt nostrum adipisci pariatur, cumque aliquam saepe nobis! Vero architecto nemo laboriosam itaque
+            tempore ut consequuntur! Mollitia aliquam praesentium porro repellat eos dolorem ad quod sit neque dolor.
+            Dolorem quasi blanditiis id quisquam ea omnis ad nemo obcaecati, tenetur neque possimus eos, modi nostrum
+            suscipit veritatis ratione molestias architecto repellendus doloremque exercitationem, rerum laudantium?
+            Laboriosam ipsa incidunt quidem fugit? Autem similique ipsa consequuntur, quas minima, expedita voluptatibus
+            dignissimos ad laboriosam, animi culpa nostrum quam pariatur commodi qui architecto. Provident laboriosam
+            earum, ipsam temporibus exercitationem sequi. Laboriosam aperiam facere, libero eligendi laudantium ipsa
+            placeat eveniet cumque dolorum minus minima enim unde quae eum. In culpa delectus, repudiandae sed harum
+            odit nobis laborum illo ea ad. Numquam aliquam aspernatur libero assumenda odio voluptates! Modi voluptas
+            minima excepturi est quod eius beatae assumenda consectetur praesentium obcaecati rem eligendi vel id porro
+            dolorum enim, dolor dignissimos. Quia, eum. Amet quae culpa fugiat eveniet eos quo velit.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#n3">News Headline1</button>
+        </h2>
+
+        <div class="accordion-collapse collapse" data-bs-parent="#acc" id="n3">
+          <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quidem
+            perspiciatis quia aspernatur nostrum natus voluptatem? Earum, numquam ipsum! Porro accusantium aut, sint
+            minima sed aliquam! Beatae inventore perferendis eaque voluptatem velit, voluptas, aspernatur suscipit
+            aliquid eligendi illo tempora nesciunt dicta veritatis mollitia omnis accusantium, itaque at dolorum!
+            Nesciunt nostrum adipisci pariatur, cumque aliquam saepe nobis! Vero architecto nemo laboriosam itaque
+            tempore ut consequuntur! Mollitia aliquam praesentium porro repellat eos dolorem ad quod sit neque dolor.
+            Dolorem quasi blanditiis id quisquam ea omnis ad nemo obcaecati, tenetur neque possimus eos, modi nostrum
+            suscipit veritatis ratione molestias architecto repellendus doloremque exercitationem, rerum laudantium?
+            Laboriosam ipsa incidunt quidem fugit? Autem similique ipsa consequuntur, quas minima, expedita voluptatibus
+            dignissimos ad laboriosam, animi culpa nostrum quam pariatur commodi qui architecto. Provident laboriosam
+            earum, ipsam temporibus exercitationem sequi. Laboriosam aperiam facere, libero eligendi laudantium ipsa
+            placeat eveniet cumque dolorum minus minima enim unde quae eum. In culpa delectus, repudiandae sed harum
+            odit nobis laborum illo ea ad. Numquam aliquam aspernatur libero assumenda odio voluptates! Modi voluptas
+            minima excepturi est quod eius beatae assumenda consectetur praesentium obcaecati rem eligendi vel id porro
+            dolorum enim, dolor dignissimos. Quia, eum. Amet quae culpa fugiat eveniet eos quo velit.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#n4">News Headline1</button>
+        </h2>
+
+        <div class="accordion-collapse collapse" data-bs-parent="#acc" id="n4">
+          <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quidem
+            perspiciatis quia aspernatur nostrum natus voluptatem? Earum, numquam ipsum! Porro accusantium aut, sint
+            minima sed aliquam! Beatae inventore perferendis eaque voluptatem velit, voluptas, aspernatur suscipit
+            aliquid eligendi illo tempora nesciunt dicta veritatis mollitia omnis accusantium, itaque at dolorum!
+            Nesciunt nostrum adipisci pariatur, cumque aliquam saepe nobis! Vero architecto nemo laboriosam itaque
+            tempore ut consequuntur! Mollitia aliquam praesentium porro repellat eos dolorem ad quod sit neque dolor.
+            Dolorem quasi blanditiis id quisquam ea omnis ad nemo obcaecati, tenetur neque possimus eos, modi nostrum
+            suscipit veritatis ratione molestias architecto repellendus doloremque exercitationem, rerum laudantium?
+            Laboriosam ipsa incidunt quidem fugit? Autem similique ipsa consequuntur, quas minima, expedita voluptatibus
+            dignissimos ad laboriosam, animi culpa nostrum quam pariatur commodi qui architecto. Provident laboriosam
+            earum, ipsam temporibus exercitationem sequi. Laboriosam aperiam facere, libero eligendi laudantium ipsa
+            placeat eveniet cumque dolorum minus minima enim unde quae eum. In culpa delectus, repudiandae sed harum
+            odit nobis laborum illo ea ad. Numquam aliquam aspernatur libero assumenda odio voluptates! Modi voluptas
+            minima excepturi est quod eius beatae assumenda consectetur praesentium obcaecati rem eligendi vel id porro
+            dolorum enim, dolor dignissimos. Quia, eum. Amet quae culpa fugiat eveniet eos quo velit.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--icon-->
+
+  <div class="container">
+    <div class="accordion" id="acc">
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="spinner-border text-primary"></div>Loading...
+    <div class="spinner-border text-success spinner-border-sm"></div>Loading
+    <button class="btn btn-warning">
+      <div class="spinner-border text-success spinner-border-sm"></div>Loading...
+    </button>
+    <div class="spinner-grow text-danger"></div>
+  </div>
+
+
+
+</body>
+
+</html>

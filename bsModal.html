@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#m">
+            open Modal
+        </button>
+        <div class="modal fade" id="m">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">
+                            Configuration Message
+                        </h1>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are You sure??
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea illo autem ab vitae repudiandae esse
+                        praesentium consequatur laborum necessitatibus corporis quo, magni tempore. Enim labore commodi
+                        similique distinctio doloremque deleniti ratione voluptas exercitationem quibusdam possimus
+                        veritatis nostrum at, veniam iste? Unde perspiciatis minus animi ex delectus debitis veniam,
+                        accusamus illo magnam possimus? Hic obcaecati, eius quia, assumenda expedita non accusamus modi
+                        dolorem quos nam maiores ea illum in consectetur laboriosam deserunt delectus suscipit qui
+                        consequatur labore? Earum recusandae incidunt obcaecati facere, minima corrupti non praesentium
+                        iure doloribus debitis, itaque voluptatibus sunt? Consequuntur molestias molestiae dolore.
+                        Deleniti quidem quaerat sit voluptatum.
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#n" >OK</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="n">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                            You click ok
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#m">Go Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
