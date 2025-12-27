@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--script>
         var a = undefined // Value not assigned
@@ -17,19 +18,96 @@
     </!script-->
     <script>
         const person = {
-            firstName : "xyz",
-            lastName : "abc"    
+            firstName: "xyz",
+            lastName: "abc"
 
         }
-        document.write(person.firstName+" ");
+        document.write(person.firstName + " ");
         document.write(person["lastName"]);
 
     </script>
+
+    <script>
+        const person1 = {
+            id: 1,
+            name: "xyz"
+        }
+        document.write(person1.id);
+        document.write(person1["name"]);
+    </script>
+    <br>
+    <script>
+        const fruits = ['Apple', 'banana'];
+        document.write(fruits[0] + "<br>");
+        document.write(fruits.length + "<br>");
+        document.write(fruits[fruits.length - 1] + "<br>");
+
+    </script>
+    <br>
+
+    <!--Array Methods-->
+    <!--1. push -> array.push(item)-->
+
+    <script>
+        let flower = ["Rose", "lily"];
+        flower.push("lotus");
+        console.log(flower);
+
+
+
+    </script>
+
+
+    <!--2. pop -> array.pop() -->
+    <script>
+        let numbers = [10, 20, 30];
+
+        let removed = numbers.pop();
+        console.log(removed);
+        console.log(numbers);
+    </script>
+
+    <!--    3. Map -> array.map(callback)
+                old = [2,3,4]
+                new = [3,4,5]-->
+    <script>
+        let nums = [1, 2, 3, 4];
+        let squares = nums.map(num => num * num);
+        console.log(squares);
+    </script>
+    <!-- 4. filter -> array.filter(callback)-->
+    <script>
+        let ages = [12, 18, 20];
+        let adults = ages.filter(age => age >= 18);
+        console.log(adults);
+    </script>
+    <!--5. forEach ->   forEach(callback)-->
+    <script>
+        let names = ["abc", 'xyz', 'pqr']
+        names.forEach(name => { console.log("hello "+name)});
+    </script>
+
+    <!--6. includes -> array.includes(value)-->
+    <script>
+        let colors = ["red","green","blue"];
+        console.log(colors.includes("yellow"));
+        console.log(colors.includes("red"));
+    </script>
+    <!--7. find -> array.find(callback)-->
+    <script>
+        let users = [{id : 1, name : "xyz"},
+        {id : 2, name : "PQR"}];
+        let user = users.find(u => u.id === 2);
+        console.log(user);
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>

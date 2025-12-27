@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        //1.for loop
+        for (let i = 1; i <= 5; i++) {
+            console.log(i);
+        }
+
+        //2.while loop
+
+        let i1 = 1;
+        while (i1 <= 5) {
+            console.log(i1)
+            i1++;
+        }
+
+        //3. do...while loop
+
+        let i2 = 1;
+        do {
+            console.log(i2)
+            i2++
+        } while (i2 <= 5)
+
+        //4. for...of (best for arrays and string)
+        const fruits = ["apple","Mango","banana"]
+        for(let fruit of fruits){
+            console.log(fruit)
+        }
+
+        //5. for...in (best for objects)
+        let user = {
+            name : "XYZ", age : 21, city:"Delhi"
+        }
+
+        for (let key in user){
+            console.log(key+ " " + user[key]);
+            console.log(key+ " " + user.name);
+            console.log(key+ " " + user["name"]);
+        }
+
+        //for...in (for array)
+        let name = ["A","B","C"]
+        for (let i in name){
+            console.log(i);
+            console.log(name[i]);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

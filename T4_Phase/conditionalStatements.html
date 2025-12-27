@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Conditional Statements-->
+    <script>
+        //1. if Statements
+        let loggedin = true;
+        if (loggedin) {
+            console.log("Welcome User");
+        }
+
+        //2. if...else
+        let age = 18;
+        if (age >= 18) {
+            console.log("You can Vote");
+        }
+        else {
+            console.log("You have to wait");
+        }
+
+        //3. if...else if
+        let marks = 90;
+
+        if (marks >= 90) {
+            console.log("A");
+        }
+        else if (marks >= 70) {
+            console.log("Grade is B")
+        }
+        else {
+            console.log("Grade is C");
+        }
+
+        //4. switch...case
+        let role = "admin";
+        switch (role) {
+            case "admin": console.log("full access");
+                break;
+
+            case "editor": console.log("edit access");
+                break;
+            case "viewer": console.log("read only");
+                break;
+
+            default: console.log("no access");
+        }
+        //5. Ternary
+
+        let age1 = 20;
+        let result = age >= 18 ? "adult":"minor";
+        console.log(result);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

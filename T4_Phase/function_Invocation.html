@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        //1. Function Triggered by an event (button click)
+        function showmsg() {
+            alert("button clicked");
+        }
+        //parameterised function
+
+        function showmsg(a) {
+            document.write("Value is " + a);
+        }
+
+        function showmsg(a, b) {
+            document.write("val is " + (a + b));
+        }
+        //-------------------------------------------------\\
+        //2. Function called explicity from JS code
+
+        function add(a, b) {
+            return a + b;
+        }
+        let result = add(2, 5);
+        console.log(result);
+
+        //3. Automatically executed (self invoked)
+        (function() {document.write("self invoking")})();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="click here" onclick="showmsg(2)">
+</body>
+
+</html>
