@@ -1,0 +1,47 @@
+<!-- promise
+     - an object
+     - Future result
+     - Three state
+        - pending
+        - fulfilled
+        - rejected
+    let promise= new promise((resolve,reject) => {}) 
+     
+    promise handling method
+     - then()   - success handler
+     - catch()  - error handler
+     - finally() 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let order = new Promise((resolve, reject) => {
+            let success = false;
+
+            setTimeout(() =>{
+                if(success){
+                    resolve("Order Completed");
+                }
+                else{
+                    reject("Order rejected");
+                }
+
+            },2000);
+        });
+
+        order.then(result => console.log((result)))
+             .catch(error => console.log(error))
+             .finally(()=>console.log("Process Finshed"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

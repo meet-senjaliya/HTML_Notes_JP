@@ -1,0 +1,67 @@
+<!-- Create a small HTML page where:
+You store two fields in sessionStorage:
+username = "lj"
+email = "lj@example.com"
+Retrieve and display the stored username in the console.
+Remove only the email field from sessionStorage, then print the remaining data in the console.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //1) to Save data in local Storage.
+        sessionStorage.setItem("Username","lj");
+        sessionStorage.setItem("email","lj@example.com");
+
+        //2) Retrive data
+        
+        console.log(sessionStorage.getItem("Username"));
+        
+        console.log(sessionStorage.getItem("email"));
+
+        //4) delete data
+        sessionStorage.removeItem("email");
+
+        console.log(sessionStorage.getItem("Username"));
+
+    </script>
+
+    <script>
+    /*Create a small HTML page where:
+    You store three fields in localStorage:
+    product = "Laptop"
+    price = 50000
+    discount = 10
+    Retrieve and display the stored product in the console.
+    Remove the discount field from localStorage, then print the updated data in the console.
+    */
+
+    localStorage.setItem("product","Laptop")
+    localStorage.setItem("price","50000");
+    localStorage.setItem("discount","10");
+
+    console.log(localStorage.getItem("product"))
+
+    localStorage.removeItem("discount")
+
+    // 4. Print updated data 
+    console.log("Updated localStorage data:"); 
+    console.log("Product:", localStorage.getItem("product")); 
+    console.log("Price:", localStorage.getItem("price")); 
+    console.log("Discount:", localStorage.getItem("discount")); // null 
+
+
+
+    /*
+    */
+    </script>
+ </head>
+ <body>
+    
+ </body>
+ </html>

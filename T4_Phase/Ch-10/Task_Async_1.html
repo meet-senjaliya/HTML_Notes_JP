@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script>
+        function abc(){
+
+        let order = new Promise((resolve, reject) => {
+            let age = document.getElementById("i1").value;
+
+            setTimeout(() =>{
+                if(age >= 18){
+                    alert("You are adult");
+                    resolve("You are adult");
+                    
+                }
+                else{
+                    reject("You are minor");
+                }
+
+            },2000);
+        });
+
+        order.then(result => console.log((result)))
+             .catch(error => console.log(error))
+             .finally(()=>console.log("Process Finshed"));
+
+    }
+    </script>
+</head>
+<body>
+    Age: <input type="text" id = "i1">
+    <input type="submit" onclick="abc()" >
+</body>
+</html>
