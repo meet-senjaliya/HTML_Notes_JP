@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function fun() {
+        pat = /^\w+([.-]?\w+)*@\w+([.]?\w+)*(\.\w{2,3})+$/;
+        e = document.getElementById("i1").value;
+        if (pat.test(e)) {
+            alert("Email Valid")
+        }
+        else
+        {
+            alert("Enter Valid Email..!")
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="f1">
+      <input type="email" name="t1" id="i1" />
+      <input type="submit" onclick="fun()" />
+    </form>
+  </body>
+</html>
