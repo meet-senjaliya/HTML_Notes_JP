@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1) to Save data in local Storage.
+        localStorage.setItem("Username","ABC");
+
+        //2) Retrive data
+        localStorage.getItem("Username");
+        console.log(localStorage.getItem("Username"));
+
+        //3) Update data
+        localStorage.setItem("Username","PQR");
+
+        //4) delete data
+        localStorage.removeItem("Username");
+
+        //5) clearAll
+
+        localStorage.clear();
+
+
+    </script>
+    <script>
+        //1) to Save data in local Storage.
+        sessionStorage.setItem("Username","ABC");
+
+        //2) Retrive data
+        sessionStorage.getItem("Username");
+        console.log(localStorage.getItem("Username"));
+
+        //3) Update data
+        sessionStorage.setItem("Username","PQR");
+
+        //4) delete data
+        sessionStorage.removeItem("Username");
+
+        //5) clearAll
+
+        sessionStorage.clear();
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" name="" id="">
+    </form>
+</body>
+</html>
