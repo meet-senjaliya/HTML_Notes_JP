@@ -1,0 +1,52 @@
+<!-- WAP to perform task as asked below
+ 1. Add 3 button Increase Button to increase the font. It should stop increasing when the font size reaches to 200 px or stop button is clicked . Decrease button todescrease the font . It should stop decreasing when the font size reaches to 20px.
+Increase or decrease interval is 1 s and default size is 15px.
+
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let font = 15;
+
+        function fun1() {
+            test = setInterval(function() {
+                if (font < 200) {
+                    fun(font++);
+                }
+            }, 500);
+        }
+
+        function decrease() {
+            test = setInterval(function() {
+                if (font > 20) {
+                    fun(font--);
+                }
+            }, 500);
+        }
+
+        function stop() {
+            clearInterval(test)
+        }
+
+
+
+        function fun(size) {
+            document.getElementById("p1").style.fontSize = size + "px";
+        }
+    </script>
+</head>
+
+<body>
+    <p id="p1">Hello</p>
+    <button onclick="fun1()">Increase</button>
+    <button onclick="decrease()">Increase</button>
+    <button onclick="stop()">stop</button>
+</body>
+
+</html>

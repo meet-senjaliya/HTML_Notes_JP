@@ -1,0 +1,36 @@
+<!--
+Write a code to increase the size at interval of 1 sec and it should stop incrasing when the fontsize reches to 50px.
+This task should be perform when you click on increase button on broweser.
+default fontsize 50px 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p">Hello</p>
+    <button onclick="increase()">Increase</button>
+
+    <script>
+        let font_size = 15
+            function increase() {
+                
+                    setInterval(function() {
+                        if(size < 50){
+                            fun(font++)
+                        }
+                    }, 1000);
+                }
+
+            function fun(size){
+                document.getElementById('p').style.fontSize = size+"px";
+            }
+            
+    </script>
+</body>
+
+</html>
