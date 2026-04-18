@@ -1,23 +1,36 @@
-/*
-Write a code to fetch the values of keys and print a sentance as 
-"Hi ! We are students of semester 4 & CSE branch "
-*/
+/* Design a node js application using a express JS to satisfy following requirements:
+ 1. The 1st middleware should display "1st fun Executed"
+ 2. The 2nd middleware should display "2nd fun Executed"
+ 3. The 3rd middleware should perform a simple arithmatic operation & storeresult in requestobject,
+    then displayed it in console.
 
-const a = {
-    "A": "LJU",
-    "B":["CSE","IT","CE"],
-    "C":[{
-        "D":"Hi",
-        "E":['are',4,{'f':['semester','We']}]
-    }],
+apply all 3 middleware in sequence to a single route "/class".
+Final Respond should be Thank You.
+ */
 
-    'G':{
-        "H":"students",
-        "I":["of","!"]
-    },
+const express = require("express");
+const app = express();
 
-    "j":[{"k":'Python',"L":"branch"},"FSD-2"]
+const addone = (req,res,next)=>{
+    res.write("1st Fun Executed")
+    next();
 }
-console.log(
-  a.C[0].D + a.G.I[1] + " " + a.C[0].E[2].f[1] + " " + a.C[0].E[0],
-);
+
+const addtwo = (req,res,next)=>{
+    res.write("2nd Fun Executed")
+    next();
+}
+
+const addthree = (req,res,next)=>{
+    req.total = 50+40;
+    console.log(req.total)
+    next();
+}
+
+app.get("/class",addone, addtwo,addthree, (req,res)=>{
+    res.write("Thank You")
+    res.end()
+})
+app.listen(5006, () => {
+    console.log("Server running on http://localhost:5006");
+});
